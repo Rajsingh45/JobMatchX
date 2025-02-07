@@ -1,0 +1,13 @@
+# Ignore Python cache and compiled files
+__pycache__/
+*.pyc
+
+# Ignore virtual environments
+venv/
+env/
+
+# Optionally ignore the model if it's too large or sensitive
+# placement_model.pkl
+
+# Ignore system files
+.DS_Store

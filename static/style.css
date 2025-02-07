@@ -1,0 +1,151 @@
+/* Importing Google Font for a premium look */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+/* Reset default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Full-page background with gradient effect */
+body {
+    background: linear-gradient(to right, #1e3c72, #2a5298);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 40px;
+}
+
+/* Styling the title */
+h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    color: white;
+    text-align: left;
+    width: 100%;
+    max-width: 500px;
+    margin-bottom: 30px;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Flexbox container for title and form */
+.container {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    width: 90%;
+    max-width: 1000px;
+    gap: 50px;  /* Space between title and form */
+}
+
+/* Glassmorphic form styling */
+form {
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(10px);
+    padding: 25px;
+    width: 90%;
+    max-width: 450px;
+    border-radius: 12px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
+    animation: fadeIn 0.6s ease-in-out;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+/* Spacing for form fields */
+form div {
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Label styles */
+label {
+    font-size: 14px;
+    font-weight: 500;
+    color: white;
+    margin-bottom: 5px;
+}
+
+/* Input field styling */
+input {
+    padding: 12px;
+    border: none;
+    border-radius: 6px;
+    font-size: 14px;
+    outline: none;
+    transition: all 0.3s ease;
+    background: rgba(255, 255, 255, 0.2);
+    color: white;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+/* Change input color when focused */
+input:focus {
+    border-color: #00f2fe;
+    box-shadow: 0px 0px 10px rgba(0, 242, 254, 0.5);
+}
+
+/* Submit Button Styling */
+button {
+    width: 100%;
+    padding: 14px;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    background: linear-gradient(135deg, #ff758c, #ff7eb3);
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0px 4px 10px rgba(255, 120, 150, 0.4);
+}
+
+/* Button hover effect */
+button:hover {
+    background: linear-gradient(135deg, #ff5a7a, #ff4f8b);
+    transform: translateY(-2px);
+    box-shadow: 0px 6px 15px rgba(255, 120, 150, 0.6);
+}
+
+/* Result Section */
+#result {
+    margin-top: 15px;
+    text-align: center;
+    font-size: 1.3em;
+    font-weight: 600;
+    color: white;
+    padding: 12px;
+    background: rgba(255, 255, 255, 0.15);
+    border-radius: 6px;
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Smooth Fade-in Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    h1 {
+        text-align: center;
+        font-size: 2.5rem;
+        max-width: 100%;
+    }
+}
